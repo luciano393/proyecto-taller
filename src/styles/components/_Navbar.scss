@@ -1,0 +1,136 @@
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $shadow;
+    .logo {
+        margin: 1.5rem;
+        font-size: 2.5rem;
+    }
+    .whatsapp {
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        cursor: pointer;
+        &__icon {
+            font-size: 2rem;
+            color: green;
+            padding: 1rem;
+            font-size: 4rem;
+        }
+        &__number {
+            display: none;
+        }
+    }
+    .bars {
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        font-size: 4rem;
+        color: $color-red;
+        padding: 1rem;
+        &:hover {
+            background-color: black;
+        }
+    }
+    @media (min-width: 720px) {
+        justify-content: center;
+        padding-bottom: .5rem;
+        .logo {
+            position: absolute;
+            top: .5rem;
+            left: 1rem;
+        }
+        .whatsapp {
+            top: 0;
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+            right: 1rem;
+            &__icon {
+                padding: .5rem;
+                font-size: 2.5rem;
+            }
+            &__number {
+                display: initial;
+                text-decoration: none;
+                color: $color-gray;
+                font-weight: 600;
+                font-size: 1.2rem;
+                &:hover {
+                    color: $color-red;
+                }
+            }
+        }
+        .bars {
+            display: none;
+        }
+    }
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-red;
+    transition: all .3s linear;
+    padding: 0;
+    z-index: 1;
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav_logo {
+            color: white;
+            margin: 1.5rem;
+            font-size: 2.5rem;
+        }
+        .nav_close {
+            color: white;
+            font-size: 1.8rem;
+            margin-right: 2rem;
+            cursor: pointer;
+        }
+    }
+    .item {
+        font-size: 1.2rem;
+        color: white;
+        cursor: pointer;
+        border-bottom: 1px solid white;
+        display: block;
+        padding: 1rem 2rem;
+        text-decoration: none;
+    }
+    @media (min-width: 720px) {
+        position: relative;
+        flex-direction: row;
+        min-height: auto;
+        background-color: transparent;
+        width: auto;
+        margin-top: 4rem;
+        .heading {
+            display: none;
+        }
+        .item {
+            color: $color-gray;
+            border-bottom: 4px solid lighten($color: $color-gray, $amount: 20);
+            margin-right: .5rem;
+            padding-bottom: .5rem;
+            &:hover {
+                color: $color-red;
+                border-bottom: 4px solid $color-red;
+            }
+        }
+    }
+}
+
+.open {
+    top: 0;
+}
+
+.close {
+    top: -100%
+}
