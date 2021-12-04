@@ -10,3 +10,10 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px; 
 }
+
+section {
+    padding: 4rem 1.5rem;
+    @media (min-width: 720px) {
+        padding: 4rem 10rem;
+    }
+}

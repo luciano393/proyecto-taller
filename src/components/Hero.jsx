@@ -18,9 +18,8 @@ export const Hero = () => {
         >
             <div className="slide-item">
                 <div className="text-content">
-                    <h2>Taller de chapa y pintura</h2>
-                    <h2>Servicio Alcorta</h2>
-                    <Button text="Ubicacion" className="btn primary" to="/"/>
+                    <h1>Taller de chapa y pintura Servicio Alcorta</h1>
+                    <Button text="Conocenos" className="btn primary" to="/"/>
                 </div>
                 <div className="image-content">
                     <img src={image2} alt=" "/>
@@ -28,7 +27,7 @@ export const Hero = () => {
             </div>
             <div className="slide-item">
                 <div className="text-content">
-                    <h2>Estamos ubicados en Moreno, Buenos Aires</h2>
+                    <h1>Estamos ubicados en Moreno, Buenos Aires</h1>
                     <Button text="Ubicacion" className="btn primary" to="/"/>
                 </div>
                 <div className="image-content">
@@ -37,8 +36,8 @@ export const Hero = () => {
             </div>
             <div className="slide-item">
                 <div className="text-content">
-                    <h2>Presupuestos para el seguro</h2>
-                    <Button text="Ubicacion" className="btn primary" to="/"/>
+                    <h1>Presupuestos para el seguro</h1>
+                    <Button text="Cotizar" className="btn primary" to="/"/>
                 </div>
                 <div className="image-content">
                     <img src={image3} alt=" "/>

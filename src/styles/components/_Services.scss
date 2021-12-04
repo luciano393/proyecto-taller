@@ -1,0 +1,50 @@
+.Services {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: $color-red;
+        margin-bottom: 1rem;
+    }
+    p {
+        color: $color-gray;
+        font-size: 1.2rem;
+    }
+    .box-container {
+        margin: 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .5rem;
+        width: 100%;
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            box-shadow: $shadow;
+            width: 10rem;
+            height: 10rem;
+            .box-icon {
+                font-size: 2rem;
+                margin-bottom: .5rem;
+                color: $color-gray;
+            }
+        }
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 2rem 0;
+        @media (min-width: 720px) {
+            flex-direction: row;
+        }
+    }
+}

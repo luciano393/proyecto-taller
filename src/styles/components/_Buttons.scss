@@ -6,4 +6,17 @@
 .primary {
     background-color: $color-red;
     color: $color-white;
+    border: 1px solid $color-red;
+    &:hover {
+        background-color: lighten($color: $color-red, $amount: 10);
+        border: 1px solid lighten($color: $color-red, $amount: 10);
+    }
+}
+.outline {
+    border: 1px solid $color-gray;
+    color: lighten($color: $color-gray, $amount: 10);
+    &:hover {
+        background-color: $color-gray;
+        color: $color-white;
+    }
 }

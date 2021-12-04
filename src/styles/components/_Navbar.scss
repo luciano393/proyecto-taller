@@ -6,7 +6,9 @@ header {
     box-shadow: $shadow;
     .logo {
         margin: 1.5rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
+        font-weight: 400;
+        color: $color-gray;
     }
     .whatsapp {
         position: absolute;
@@ -78,7 +80,7 @@ nav {
     background-color: $color-red;
     transition: all .3s linear;
     padding: 0;
-    z-index: 1;
+    z-index: 100;
     .heading {
         display: flex;
         justify-content: space-between;
@@ -86,7 +88,7 @@ nav {
         .nav_logo {
             color: white;
             margin: 1.5rem;
-            font-size: 2.5rem;
+            font-size: 1.8rem;
         }
         .nav_close {
             color: white;
