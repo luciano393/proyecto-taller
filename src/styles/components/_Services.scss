@@ -29,10 +29,21 @@
             box-shadow: $shadow;
             width: 10rem;
             height: 10rem;
+            cursor: pointer;
+            transition: $transition;
             .box-icon {
                 font-size: 2rem;
                 margin-bottom: .5rem;
                 color: $color-gray;
+            }
+            &:hover {
+                background-color: $color-red;
+                p {
+                    color: $color-white;
+                }
+                .box-icon {
+                    color: $color-white;
+                }
             }
         }
     }

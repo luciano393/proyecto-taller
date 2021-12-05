@@ -1,0 +1,38 @@
+.Banner {
+    background-color: lighten($color: $color-gray, $amount: 40);
+    h3 {
+        text-align: center;
+        font-size: 1.8rem;
+        color: darken($color: $color-gray, $amount: 10);
+    }
+    .box-container {
+        display: flex;
+        gap: 2rem;
+        margin: 2rem;
+        justify-content: center;
+        align-items: center;
+        .box {
+            background-color: $color-white;
+            box-shadow: $shadow;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            .box-icon {
+                color: $color-gray;
+                font-size: 3rem;
+            }
+            .text {
+                margin-left: 1.5rem;
+                h4 {
+                    font-size: 1.3rem;
+                    color: darken($color: $color-gray, $amount: 20);
+                    margin-bottom: .5rem;
+                }
+                p {
+                    color: $color-gray;
+
+                }
+            }
+        }
+    }
+}

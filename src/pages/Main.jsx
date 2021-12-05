@@ -1,4 +1,5 @@
 import React from 'react'
+import { Banner } from '../components/Banner'
 import { Hero } from '../components/Hero'
 import { Services } from '../components/Services'
 
@@ -7,6 +8,7 @@ export const Main = () => {
         <main>
             <Hero />
             <Services />
+            <Banner />
         </main>
     )
 }
