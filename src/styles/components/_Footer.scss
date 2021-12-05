@@ -1,0 +1,26 @@
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 5rem;
+    background-color: lighten($color: $color-gray, $amount: 30);
+    p {
+        color: darken($color: $color-gray, $amount: 25);
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+    .row {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+.social {
+    font-size: 2.1rem;
+    background-color: $color-gray;
+    color: darken($color: $color-white, $amount: 10);
+    border-radius: 50%;
+    padding: .4rem;
+}

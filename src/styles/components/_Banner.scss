@@ -11,6 +11,7 @@
         margin: 2rem;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         .box {
             background-color: $color-white;
             box-shadow: $shadow;
@@ -33,6 +34,9 @@
 
                 }
             }
+        }
+        @media (min-width: 820px) {
+            flex-direction: row;
         }
     }
 }
