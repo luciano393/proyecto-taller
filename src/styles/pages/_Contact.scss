@@ -1,10 +1,42 @@
 .Contact {
-    min-height: 100vh;
-    h1 {
-        text-align: center;
-        margin: 3rem;
-        font-size: 2.5rem;
-        font-weight: 400;
-        color: $color-red;
+  min-height: 100vh;
+  h1 {
+    text-align: center;
+    margin: 3rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: $color-red;
+  }
+  h2 {
+    text-align: center;
+    margin: 3rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: $color-red;
+  }
+}
+.whatsapp-contact {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 2rem;
+  &__icon {
+    color: green;
+    padding: 1rem;
+    font-size: 5rem;
+  }
+  &__number {
+    display: initial;
+    text-decoration: none;
+    color: $color-gray;
+    font-weight: 600;
+    font-size: 1rem;
+    font-size: 2rem;
+    &:hover {
+      color: $color-red;
     }
+  }
 }

@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { useScreen } from '../hooks/useScreen';
 
 export const Navbar = () => {
     const [showNavbar, setShowNavar] = useState(false);
+    const screen = useScreen();
 
     const toggleNavbar = () => {
         setShowNavar(!showNavbar)
@@ -24,10 +26,10 @@ export const Navbar = () => {
                     <FontAwesomeIcon icon={faTimes} className="nav_close" onClick={toggleNavbar}/>
                 </div>
 
-                <Link to="/" className="item">Inicio</Link>
-                <Link to="/about" className="item" >¿Quienes Somos?</Link>
-                <Link to="/location" className="item" >Ubicación</Link>
-                <Link to="/contact" className="item" >Contacto</Link>
+                <Link to="/" className="item" onClick={screen < 720 ? toggleNavbar : null} >Inicio</Link>
+                <Link to="/about" className="item" onClick={screen < 720 ? toggleNavbar : null}>¿Quienes Somos?</Link>
+                <Link to="/location" className="item" onClick={screen < 720 ? toggleNavbar : null}>Ubicación</Link>
+                <Link to="/contact" className="item" onClick={screen < 720 ? toggleNavbar : null}>Contacto</Link>
             </nav>
 
                 <a href="https://wa.me/541127009501?text=Hola%20tengo%20una%20consulta..." className="whatsapp">

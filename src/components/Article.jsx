@@ -1,6 +1,5 @@
 import React from 'react';
 import image from '../assets/image-4.svg'
-import { Button } from './Button';
 
 export const Article = () => {
     return (
