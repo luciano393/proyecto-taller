@@ -1,0 +1,26 @@
+.hero-image {
+    background-image: url(../../assets/taller.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem;
+}
+
+.heading {
+    text-align: center;
+    margin: 2rem 0;
+    h1 {
+        color: $color-red;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-size: 1.3rem;
+        color: darken($color: $color-gray, $amount: 15);
+    }
+}

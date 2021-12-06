@@ -1,0 +1,24 @@
+.FormContact {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    label {
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+    }
+    .input {
+        border: none;
+        box-shadow: $shadow;
+        padding: .3rem;
+        font-size: 1.2rem;
+    }
+  }
+  @media (min-width:620px) {
+      max-width: 40rem;
+      margin: auto;
+  }
+}

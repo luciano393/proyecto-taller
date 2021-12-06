@@ -15,6 +15,7 @@ export const Hero = () => {
             autoPlay={true}
             infiniteLoop={true}
             showThumbs={false}
+            swipeable={false}
         >
             <div className="slide-item">
                 <div className="text-content">

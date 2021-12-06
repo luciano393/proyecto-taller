@@ -1,6 +1,8 @@
+// Base
 @import './base/base';
 @import './base/settings';
 
+// Components
 @import './components/Navbar';
 @import './components/Hero';
 @import './components/Buttons';
@@ -8,3 +10,9 @@
 @import './components/Banner';
 @import './components/Footer';
 @import './components/Article';
+@import './components/FormContact';
+
+// Pages
+@import './pages/About';
+@import './pages/Location';
+@import './pages/Contact';

@@ -25,15 +25,15 @@ export const Navbar = () => {
                 </div>
 
                 <Link to="/" className="item">Inicio</Link>
-                <Link to="/" className="item">¿Quienes Somos?</Link>
-                <Link to="/" className="item">Ubicación</Link>
-                <Link to="/" className="item">Contacto</Link>
+                <Link to="/about" className="item" >¿Quienes Somos?</Link>
+                <Link to="/location" className="item" >Ubicación</Link>
+                <Link to="/contact" className="item" >Contacto</Link>
             </nav>
 
-            <div className="whatsapp">
-                <FontAwesomeIcon icon={faWhatsapp} className="whatsapp__icon"/>
-                <a href="/" className="whatsapp__number">11 4857-7777</a>
-            </div>
+                <a href="https://wa.me/541127009501?text=Hola%20tengo%20una%20consulta..." className="whatsapp">
+                    <FontAwesomeIcon icon={faWhatsapp} className="whatsapp__icon"/>
+                    <span className="whatsapp__number">11 2700-9501</span>
+                </a>
 
             <FontAwesomeIcon icon={faBars} className="bars" onClick={toggleNavbar}/>
         </header>
