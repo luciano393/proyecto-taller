@@ -17,11 +17,11 @@ export const Navbar = () => {
 
     return (
         <header>
-            <h1 className="logo">Servicio Alcorta</h1>
+            <h1 className="logo">LOGO</h1>
 
             <nav className={open}>
                 <div className="heading">
-                    <h1 className="nav_logo">Servicio Alcorta</h1>
+                    <h1 className="nav_logo">LOGO</h1>
 
                     <FontAwesomeIcon icon={faTimes} className="nav_close" onClick={toggleNavbar}/>
                 </div>

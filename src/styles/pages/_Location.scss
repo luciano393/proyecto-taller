@@ -10,7 +10,7 @@
     .box-container {
         display: flex;
         position: relative;
-        background-color: lighten($color: $color-red, $amount: 15);
+        background-color: $color-secondary;
         padding: 2rem;
         flex-direction: column;
         margin-bottom: 4rem;
