@@ -9,6 +9,9 @@
         .image-content {
             background-color: $color-secondary;
             margin-bottom: 2rem;
+            img {
+                width: 100%;
+            }
         }
         .text-content {
             display: flex;

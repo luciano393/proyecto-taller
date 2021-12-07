@@ -35,7 +35,7 @@ header {
             background-color: black;
         }
     }
-    @media (min-width: 720px) {
+    @media (min-width: 920px) {
         justify-content: center;
         padding-bottom: .5rem;
         .logo {
@@ -107,7 +107,7 @@ nav {
         text-transform: uppercase;
         transition: $transition;
     }
-    @media (min-width: 720px) {
+    @media (min-width: 920px) {
         position: relative;
         flex-direction: row;
         min-height: auto;
@@ -125,9 +125,12 @@ nav {
             margin-right: .5rem;
             padding-bottom: .5rem;
             &:hover {
-                color: $color-red;
-                border-bottom: 4px solid $color-red;
+                color: $color-secondary;
+                border-bottom: 4px solid $color-secondary;
             }
+        }
+        .active {
+            border-bottom: 4px solid $color-red;
         }
     }
 }

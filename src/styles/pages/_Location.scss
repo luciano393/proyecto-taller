@@ -1,11 +1,27 @@
 .Location {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
     h1 {
+        font-size: 2.5rem;
         text-align: center;
         margin: 4rem 0;
         color: $color-red;
         font-weight: 400;
+    }
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 4rem 0;
+        color: $color-red;
+        font-weight: 400;
+    }
+    p {
+        font-size: 2rem;
+        text-align: center;
+        margin: 1rem 0;
+        color: $color-gray;
+        font-weight: 400; 
     }
     .box-container {
         display: flex;
@@ -13,7 +29,6 @@
         background-color: $color-secondary;
         padding: 2rem;
         flex-direction: column;
-        margin-bottom: 4rem;
         .text-content {
             display: flex;
             justify-content: center;

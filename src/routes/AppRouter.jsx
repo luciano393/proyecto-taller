@@ -6,6 +6,7 @@ import { About } from '../pages/About';
 import { Contact } from '../pages/Contact';
 import { Location } from '../pages/Location';
 import { Main } from '../pages/Main';
+import { Works } from '../pages/Works';
 
 export const AppRouter = () => {
     return (
@@ -13,6 +14,7 @@ export const AppRouter = () => {
             <Navbar />
             <Routes>
                 <Route index element={<Main />} />
+                <Route path="/works" element={<Works />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/location" element={<Location />} />
                 <Route path="/contact" element={<Contact />} />

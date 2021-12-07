@@ -9,6 +9,7 @@ export const Location = () => {
         <div className="text-content">
             <p>Sarmiento 354</p>
             <p>A media cuadra del Bingo de Moreno</p>
+            <p>A 200 mts del Acceso Oeste</p>
         </div>
         <div className="map-content">
           <MapWithAMarker
@@ -19,6 +20,9 @@ export const Location = () => {
           />
         </div>
       </div>
+      <h2>Horarios</h2>
+      <p>Lunes a viernes de 8hs a 19hs</p>
+      <p>Sabados desde las 8hs hasta 15hs</p>
     </main>
   );
 };
