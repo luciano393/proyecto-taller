@@ -7,11 +7,11 @@ export const Footer = () => {
         <footer>
             <p>Seguinos en</p>
             <div className="row">
-                <a href="/">
-                    <FontAwesomeIcon icon={faFacebook} className="social"/>
+                <a href="/" className="social">
+                    <FontAwesomeIcon icon={faFacebook} />
                 </a>
-                <a href="/">
-                    <FontAwesomeIcon icon={faInstagram} className="social"/>
+                <a href="/" className="social">
+                    <FontAwesomeIcon icon={faInstagram} />
                 </a>
             </div>
         </footer>

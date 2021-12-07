@@ -18,9 +18,15 @@ footer {
 }
 
 .social {
-    font-size: 2.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
     background-color: $color-gray;
     color: darken($color: $color-white, $amount: 10);
     border-radius: 50%;
     padding: .4rem;
+    &:hover {
+        background-color: darken($color: $color-red, $amount: 20);
+    }
 }
